@@ -1,4 +1,4 @@
-# Mineração de Dados
+# Desenvolvimento Web Seguro
 
 **Prof. Dr. Jefferson O. Andrade**  
 **Pós-graduação em Desenvolvimento de Aplicações Inteligentes**  
@@ -6,6 +6,13 @@
 
 **Nome:** Otávio Lube dos Santos  
 **Matrícula:** 20231DEVAI0157  
+
+---
+
+## 🔗 Repositório do Projeto
+
+O código-fonte deste projeto está disponível no repositório abaixo:  
+[GitHub - posdevai_DevWebSec](https://github.com/otaviolube/posdevai_DevWebSec)
 
 ---
 
