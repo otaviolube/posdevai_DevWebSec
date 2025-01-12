@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <style>
+          body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+          }
+          footer {
+            margin-top: auto;
+          }
+          .card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+          }
+          .card-img-top {
+            height: 150px; /* Limitar a altura das imagens */
+            object-fit: cover; /* Manter a proporção da imagem */
+          }
+          .footer-info {
+            text-align: left; /* Alinhar à esquerda em telas maiores */
+          }
+          @media (max-width: 768px) {
+            .footer-info {
+              text-align: center; /* Centralizar em telas menores */
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">MFA Security</a>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/register">Cadastro</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <header class="hero bg-primary text-white text-center py-5">
+          <div class="container">
+            <h1 class="display-4">A Importância da Autenticação Multifator (MFA)</h1>
+            <p class="lead">Proteja suas aplicações web com segurança adicional.</p>
+            <a href="/login" class="btn btn-light btn-lg">Login</a>
+          </div>
+        </header>
+
+        <section class="benefits py-5">
+          <div class="container">
+            <h2 class="text-center">Benefícios do MFA</h2>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <i class="fas fa-shield-alt card-icon text-primary"></i>
+                    <h5 class="card-title">Segurança Adicional</h5>
+                    <p class="card-text">Adicione uma camada extra de segurança além da senha.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <i class="fas fa-user-lock card-icon text-primary"></i>
+                    <h5 class="card-title">Redução de Fraudes</h5>
+                    <p class="card-text">Diminua o risco de fraudes e acessos não autorizados.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <i class="fas fa-check-circle card-icon text-primary"></i>
+                    <h5 class="card-title">Conformidade</h5>
+                    <p class="card-text">Atenda a requisitos de conformidade e regulamentações.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <i class="fas fa-thumbs-up card-icon text-primary"></i>
+                    <h5 class="card-title">Tranquilidade</h5>
+                    <p class="card-text">Sinta-se seguro sabendo que suas informações estão protegidas.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="owasp py-5 bg-light">
+          <div class="container">
+            <h2 class="text-center">OWASP Top 10 e Vulnerabilidades</h2>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/SQLnjection.png" class="card-img-top" alt="Injeção">
+                  <div class="card-body">
+                    <h5 class="card-title">Injeção</h5>
+                    <p class="card-text">A injeção ocorre quando um atacante envia dados não confiáveis para um interpretador, permitindo que ele execute comandos maliciosos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="https://cdn.prod.website-files.com/60658b47b03f0c77e8c14884/6364ab8131d7b5245fa2e618_broken-authentication-featured.jpg" class="card-img-top" alt="Quebra de Autenticação">
+                  <div class="card-body">
+                    <h5 class="card-title">Quebra de Autenticação</h5>
+                    <p class="card-text">A quebra de autenticação permite que atacantes comprometam senhas, chaves ou tokens de sessão, resultando em acesso não autorizado.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="https://getprivacy.com.br/wp-content/uploads/dados-sensiveis.png" class="card-img-top" alt="Exposição de Dados Sensíveis">
+                  <div class="card-body">
+                    <h5 class="card-title">Exposição de Dados Sensíveis</h5>
+                    <p class="card-text">Dados sensíveis podem ser expostos devido a falhas de segurança, permitindo que atacantes acessem informações confidenciais.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="https://owasp.org/Top10/pt_BR/assets/TOP_10_Icons_Final_Broken_Access_Control.png" class="card-img-top" alt="Controle de Acesso Quebrado">
+                  <div class="card-body">
+                    <h5 class="card-title">Controle de Acesso Quebrado</h5>
+                    <p class="card-text">O controle de acesso quebrado permite que usuários não autorizados acessem recursos ou dados que não deveriam.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="bg-dark text-white text-center py-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 footer-info">
+                <h5>Informações do Trabalho</h5>
+                <p><i class="fas fa-chalkboard-teacher"></i> <strong>Prof. Dr. Jefferson O. Andrade</strong></p>
+                <p><i class="fas fa-graduation-cap"></i> <strong>Pós-graduação em Desenvolvimento de Aplicações Inteligentes</strong></p>
+                <p><i class="fas fa-code"></i> <strong>Desenvolvimento Web Seguro — Trabalho 02</strong></p>
+                <p><i class="fas fa-user"></i> <strong>Nome:</strong> Otávio Lube dos Santos</p>
+                <p><i class="fas fa-id-badge"></i> <strong>Matrícula:</strong> 20231DEVAI0157</p>
+              </div>
+              <div class="col-md-6">
+                <h5>Contatos</h5>
+                <a href="https://prof.otaviolube.com/" target="_blank" class="btn btn-outline-light mx-1">
+                  <i class="fas fa-globe"></i> Website
+                </a>
+                <a href="https://www.instagram.com/prof.otaviolube/" target="_blank" class="btn btn-outline-light mx-1">
+                  <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/otaviolube/" target="_blank" class="btn btn-outline-light mx-1">
+                  <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/otaviolube" target="_blank" class="btn btn-outline-light mx-1">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      </body>
+    </html>
