@@ -165,7 +165,6 @@
 
 ---
 
-## 🎥 Link para o Vídeo
-**Assista ao vídeo explicativo sobre o tema abaixo:**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/g67UbixvGQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+## 🎥 Link para o Vídeo
+[![Assista ao vídeo](https://img.youtube.com/vi/g67UbixvGQI/0.jpg)](https://youtu.be/g67UbixvGQI)
